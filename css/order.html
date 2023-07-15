@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Delivery Website</title>
+    <link rel="stylesheet" type="text/css" href="ord.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="img/logo.jpg" alt="MyOnlineMeal.com">
+            </div>
+            <ul>
+                <li class="item"><a href="index.html#home">Home</a></li>
+                <li class="item"><a href="index.html#services-container">Services</a></li>
+                <li class="item"><a href="index.html#client-section">Our Clients</a></li>
+                <li class="item"><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="order">
+        <h2>Order Now</h2>
+        <div id="menu">
+            <div class="a dish">
+                <h3>Dish 1</h3>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Dish 1', 10)">Buy</button>
+                
+            </div>
+            <div class="dish b">
+                <h3>Dish 2</h3>
+                <p>Price: $12</p>
+                <button onclick="addToCart('Dish 2', 12)">Buy</button>
+            </div>
+            <div class="dish c">
+                <h3>Dish 3</h3>
+                <p>Price: $8</p>
+                <button onclick="addToCart('Dish 3', 8)">Buy</button>
+            </div>
+            <div class="dish d">
+                <h3>Dish 4</h3>
+                <p>Price: $15</p>
+                <button onclick="addToCart('Dish 4', 15)">Buy</button>
+            </div>
+            <div class="dish e">
+                <h3>Dish 5</h3>
+                <p>Price: $9</p>
+                <button onclick="addToCart('Dish 5', 9)">Buy</button>
+            </div>
+            <div class="dish f">
+                <h3>Dish 6</h3>
+                <p>Price: $19</p>
+                <button onclick="addToCart('Dish 6', 19)">Buy</button>
+            </div>
+        </div>
+        <div id="cart">
+            <h3>Your Order:</h3>
+           
+            <ul id="selected-items"></ul>
+           <p> <span id="total-price">Total Price : $</span> <span id="total">0<span></span></p>
+            
+            <button onclick="confirmOrder()" ><a href='index.html'>Confirm Order</a></button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
